@@ -2,8 +2,41 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css" />
         <title> recipe index </title>
     </head>
+    <style>
+        div {
+          color: white;
+          background-color: black;
+        }
+    
+        p {
+          color: red;
+        }
+        li {
+            color: blue;
+        }
+        h1 {
+            color: green;
+        }
+        #title {
+            background-color: red;
+        }
+        .read ,
+        .unread {
+        color: white;
+         background-color:black;
+        /* several unique declarations */
+        }
+        .alert-text {color: red;}
+        
+        .subsection.header {color: red;}
+
+        .subsection#preview {color: green;}
+
+        .ancestor .contents {color: purple;}
+      </style>
 
     <body>
         <h1>Odin Recipes</h1>
@@ -18,7 +51,30 @@
                 <a href="./campfire-queso.html" target="_blank" rel="nooperner noreferrer"> Campire Queso </a>
             </li>
         </ol>
-        <p> All three links above</p>
+        <p> All three links above</p> <br>
+        <div> Testing out this </div> <br>
+        <div class="alert-text"> 'alert' Testing out this with 'alert-text' </div><br>
+        <div id="title"> Testing out this with 'title id' </div>
+        <br>
+        <div>
+            <div class="subsection header">Latest Post</div>
+            <p class="subsection preview"> This is where a preview fo a post might go.</p>
+        </div>
+        <br>
+        <div>
+            <div class="subsection header">Latest Posts</div>
+            <p class="subsection" id="preview"> This is where a preview fo a post might go.</p>
+        </div>
+        
+        <div class = 'ancestor'>
+            ancestor div class
+        <div class = 'contents'>
+            contents div class
+        <div class = 'contents'>2nd contents div class
+                    </div>
+                </div>
+            </div>
+        <div class = 'contents'>ancestor div class</div>
 
     </body>
 </html>
